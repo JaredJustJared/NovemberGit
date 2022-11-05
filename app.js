@@ -1,31 +1,19 @@
-let age;
-const gender = 'МУЖ' // жен
+const typeUser = 'adn'; // user, guest, bot  
 
-age = +age;
-
-if (!isNaN(age)) {
-    if (age > 18){
-        console.log("Вам больше 18 лет")
-        } else if (age < 18){ 
-            console.log("Вам меньше 18 лет")
-        } else if (age === 18) {
-            console.log("Ура, вам 18 лет!") 
-        } else
-            console.log("Пожалуйста, укажите ваш возраст") 
-        } 
-    else {
-        console.log("Введите корректные данные")      
-    }
-
-    
-    if (gender.toLocaleLowerCase() === 'муж') {
-        console.log("Вам налево")
-    }
-
-    if (gender.toLocaleLowerCase() === 'жен') {
-        console.log("Вам направо")
-    }
-
-const isAdmin = false;
-
-console.log(`Добро пожаловать: ${isAdmin ? `Администратор` : `Пользователь` }`)    
+switch (typeUser) {
+    case 'admin':
+        console.log('Вы администратор')
+        break;
+    case 'user':
+        console.log('Вы пользователь')
+        break;
+    case 'guest':
+        console.log('Вы гость')
+        break;
+    case 'bot':
+        console.log('Вы бот')
+        break;
+    default:
+        console.log('Неизвестный тип пользователя')
+        break;
+}
