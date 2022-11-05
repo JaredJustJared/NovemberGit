@@ -26,4 +26,6 @@ if (!isNaN(age)) {
         console.log("Вам направо")
     }
 
-    
+const isAdmin = false;
+
+console.log(`Добро пожаловать: ${isAdmin ? `Администратор` : `Пользователь` }`)    
