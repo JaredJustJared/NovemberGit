@@ -1,9 +1,11 @@
-const age = 15;
+const age = 18;
 const gender = 'МУЖ' // жен
 
 
 if (age > 18){
     console.log("Вам больше 18 лет")
+} else {
+    console.log("Вам меньше 18 лет")
 }
 
 if (gender.toLocaleLowerCase() === 'муж') {
